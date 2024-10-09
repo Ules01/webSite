@@ -10,6 +10,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Import routes
 const homeRoute = require('./routes/home');
 const aboutMeRoute = require('./routes/aboutMe');
+const formationsRoute = require('./routes/formations');
 const experiencesRoute = require('./routes/experiences');
 const projectsRoute = require('./routes/projects');
 
@@ -17,6 +18,7 @@ const projectsRoute = require('./routes/projects');
 // Use routes
 app.use('/', homeRoute);
 app.use('/aboutMe', aboutMeRoute);
+app.use('/formations', formationsRoute);
 app.use('/experiences', experiencesRoute);
 app.use('/projects', projectsRoute);
 
