@@ -9,9 +9,16 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Import routes
 const homeRoute = require('./routes/home');
+const aboutMeRoute = require('./routes/aboutMe');
+const experiencesRoute = require('./routes/experiences');
+const projectsRoute = require('./routes/projects');
+
 
 // Use routes
 app.use('/', homeRoute);
+app.use('/aboutMe', aboutMeRoute);
+app.use('/experiences', experiencesRoute);
+app.use('/projects', projectsRoute);
 
 
 // Start the server
