@@ -1,0 +1,34 @@
+.hexagon-container {
+    margin-left: 10px;
+    width: 300px;             /* Set width including border */
+    height: 300px;            /* Set height including border */
+    background-color: #333;   /* Border color */
+    clip-path: polygon(
+      50% 0%, 100% 25%, 100% 75%, 
+      50% 100%, 0% 75%, 0% 25%
+    );
+    padding: 10px;            /* Space for border */
+  }
+
+.hexagon-image {
+    width: 100%;            /* Set image width */
+    height: 100%;           /* Set image height */
+    overflow: hidden;
+    clip-path: polygon(
+      50% 0%, 100% 25%, 100% 75%, 
+      50% 100%, 0% 75%, 0% 25%
+    );
+  }
+
+  /* Styling for the image inside the hexagon */
+  .hexagon-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      /* Ensure the image fits well inside the shape */
+  }
+
+  .centered-text {
+    font-weight: bold;
+    text-align: center;   /* Center the text itself */
+    flex-grow: 1;
+  }
