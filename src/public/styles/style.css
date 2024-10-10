@@ -1,25 +1,29 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background-color: #222;
   margin: 0;
   padding: 0;
+  color: white;
 }
 
 h1 {
-  color: darkblue;
+  color: cadetblue;
   text-align: center;
   margin-top: 50px;
 }
 
-label {
-  text-align: center;
-  font-size: 1.2em;
-}
-
 h2 {
-  color: darkblue;
+  color: cadetblue;
   margin-left: 15%;
 }
+
+label {
+  white-space: pre;
+  font-family: monospace;
+  color: greenyellow;
+  font-size: 15px;
+}
+
 
 /* Flex Container */
 .flex-container {
@@ -38,7 +42,7 @@ h2 {
   flex-direction: column;   /* Stack the items vertically */
   justify-content: center;  /* Center items vertically */
   align-items: center;      /* Center items horizontally */
-  background-color: white;
+  background-color: #333;
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   width: 100%; /* Set the width of each item */
@@ -68,7 +72,7 @@ h2 {
 /* Title styling */
 .flex-item h3 {
   font-size: 1.5em;
-  color: #333;
+  color: lightskyblue;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -76,5 +80,5 @@ h2 {
 /* Description styling */
 .flex-item p {
   font-size: 1em;
-  color: #666;
+  color: lightgray;
 }
