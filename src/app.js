@@ -5,7 +5,8 @@ const path = require('path');
 const port = 3000;
 
 // Serve static files (e.g., CSS, JS, images) from the 'public' folder
-app.use(express.static(path.join(__dirname, 'public')));
+//app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static('public'));
 
 // Import routes
 const homeRoute = require('./routes/home');
